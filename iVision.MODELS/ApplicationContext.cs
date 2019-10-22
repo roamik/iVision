@@ -1,4 +1,7 @@
 ﻿using iVision.MODELS.Entities;
+using iVision.MODELS.Entities.Identity;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -6,15 +9,12 @@ using System.Text;
 
 namespace iVision.MODELS
 {
-    public class ApplicationContext : DbContext
+    public class ApplicationContext : IdentityDbContext<User, Role, Guid>
     {
         public DbSet<Patient> Patients { get; set; }
         public DbSet<Doctor> Doctors { get; set; }
         public DbSet<MedicalCard> MedicalCards { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer(@"Server=DESKTOP-NPA9KFR;Database=myDataBase;Trusted_Connection=True;Integrated Security=true;");
-        }
+        public ApplicationContext(DbContextOptions<ApplicationContext> options) : base(options){}
     }
 }

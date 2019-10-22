@@ -5,6 +5,24 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20191018102036_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191018102036_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191018113110_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191018113110_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191018113455_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191018113455_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191018113649_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191018113649_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191018113956_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191018113956_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191018130230_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191018130230_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191022155412_update-database.cs" />
+    <Compile Remove="Migrations\20191022155412_update-database.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="2.2.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.2.6" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.6" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.2.6">
