@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iVision", "iVision.csproj", "{8FF567B0-F7A1-4F6B-8F5B-09024C6B3C15}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "iVision", "iVision\iVision.csproj", "{8FF567B0-F7A1-4F6B-8F5B-09024C6B3C15}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "iVision.DAL", "iVision.DAL\iVision.DAL.csproj", "{379B6602-C965-4CB2-9428-D0D3BB91710E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iVision.MODELS", "iVision.MODELS\iVision.MODELS.csproj", "{32D8F941-817F-4FB7-9025-0E651D570C4D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{8FF567B0-F7A1-4F6B-8F5B-09024C6B3C15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FF567B0-F7A1-4F6B-8F5B-09024C6B3C15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8FF567B0-F7A1-4F6B-8F5B-09024C6B3C15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{379B6602-C965-4CB2-9428-D0D3BB91710E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{379B6602-C965-4CB2-9428-D0D3BB91710E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{379B6602-C965-4CB2-9428-D0D3BB91710E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{379B6602-C965-4CB2-9428-D0D3BB91710E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32D8F941-817F-4FB7-9025-0E651D570C4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32D8F941-817F-4FB7-9025-0E651D570C4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32D8F941-817F-4FB7-9025-0E651D570C4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32D8F941-817F-4FB7-9025-0E651D570C4D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
