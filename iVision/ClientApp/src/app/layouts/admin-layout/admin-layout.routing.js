@@ -10,6 +10,7 @@ var notifications_component_1 = require("../../pages/notifications/notifications
 var upgrade_component_1 = require("../../pages/upgrade/upgrade.component");
 var login_page_component_1 = require("../../pages/login-page/login-page.component");
 var auth_guard_1 = require("../../_helpers/auth.guard");
+var register_page_component_1 = require("../../pages/register-page/register-page.component");
 exports.AdminLayoutRoutes = [
     { path: 'dashboard', component: dashboard_component_1.DashboardComponent, canActivate: [auth_guard_1.AuthGuard] },
     { path: 'user', component: user_component_1.UserComponent, canActivate: [auth_guard_1.AuthGuard] },
@@ -19,6 +20,7 @@ exports.AdminLayoutRoutes = [
     { path: 'maps', component: maps_component_1.MapsComponent, canActivate: [auth_guard_1.AuthGuard] },
     { path: 'notifications', component: notifications_component_1.NotificationsComponent, canActivate: [auth_guard_1.AuthGuard] },
     { path: 'upgrade', component: upgrade_component_1.UpgradeComponent, canActivate: [auth_guard_1.AuthGuard] },
-    { path: 'login', component: login_page_component_1.LoginPageComponent }
+    { path: 'login', component: login_page_component_1.LoginPageComponent },
+    { path: 'register', component: register_page_component_1.RegisterPageComponent }
 ];
 //# sourceMappingURL=admin-layout.routing.js.map

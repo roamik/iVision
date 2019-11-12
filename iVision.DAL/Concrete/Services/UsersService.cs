@@ -21,5 +21,10 @@ namespace iVision.DAL.Concrete.Services
         {
             return await _usersRepository.ListAsync();
         }
+
+        //public async Task<User> GetUser()
+        //{
+        //    return await _usersRepository.GetUserByIDAsync();
+        //}
     }
 }

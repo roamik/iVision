@@ -10,6 +10,7 @@ import { NotificationsComponent } from '../../pages/notifications/notifications.
 import { UpgradeComponent } from '../../pages/upgrade/upgrade.component';
 import { LoginPageComponent } from '../../pages/login-page/login-page.component';
 import { AuthGuard } from '../../_helpers/auth.guard';
+import { RegisterPageComponent } from '../../pages/register-page/register-page.component';
 
 export const AdminLayoutRoutes: Routes = [
     { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
@@ -20,5 +21,6 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'maps', component: MapsComponent, canActivate: [AuthGuard] },
     { path: 'notifications', component: NotificationsComponent, canActivate: [AuthGuard] },
     { path: 'upgrade', component: UpgradeComponent, canActivate: [AuthGuard]},
-    { path: 'login', component: LoginPageComponent}
+    { path: 'login', component: LoginPageComponent },
+    { path: 'register', component: RegisterPageComponent }
 ];

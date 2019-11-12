@@ -16,6 +16,7 @@ import { UpgradeComponent } from '../../pages/upgrade/upgrade.component';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LoginPageComponent } from '../../pages/login-page/login-page.component';
+import { RegisterPageComponent } from '../../pages/register-page/register-page.component';
 
 @NgModule({
     imports: [
@@ -33,7 +34,8 @@ import { LoginPageComponent } from '../../pages/login-page/login-page.component'
         IconsComponent,
         MapsComponent,
         NotificationsComponent,
-        LoginPageComponent
+        LoginPageComponent,
+        RegisterPageComponent
     ]
 })
 
